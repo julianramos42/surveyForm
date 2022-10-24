@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"
+        type="text/css">
+</head>
+
+<body>
+    <h1 id="title" class="centrar">Inscripciones Boca Juniors</h1>
+    <p id="description" class="centrar">Completa los campos a continuación</p>
+    <div class="centrar-cuadro">
+        <form action="#" id="survey-form">
+
+            <div class="centrar"><label id="name-label" for="name"
+                    class="alinear-texto-cuadro"><strong>Nombre</strong></label></br>
+                <input name="name" id="name" required placeholder="Ingresa tu nombre">
+
+                </br><label id="email-label" for="email"
+                    class="alinear-texto-cuadro"><strong>Email</strong></label></br>
+                <input type="email" name="email" id="email" required placeholder="Ingresa tu email">
+
+                </br><label id="number-label" for="edad" class="alinear-texto-cuadro"><strong>Edad
+                    </strong>(opcional)</label></br>
+                <input type="number" name="edad" id="number" min="5" max="25" placeholder="Ingresa tu edad">
+            </div>
+
+            <div>
+                <h2>¿Como nos conociste?</h2>
+            </div>
+
+            <div><label for="television">
+                    <input id="television" type="radio" name="conocimiento" value="television"
+                        class="botones">Televisión</label><br>
+
+                <label for="radio">
+                    <input id="radio" type="radio" name="conocimiento" value="radio" class="botones">Radio</label><br>
+
+                <label for="conocidos">
+                    <input id="conocidos" type="radio" name="conocimiento" value="conocidos"
+                        class="botones">Conocidos/Familiar</label><br>
+
+                <label for="Ninguna"><input id="Ninguna" type="radio" name="conocimiento" class="botones"
+                        value="0">Ninguna de las anteriores</label>
+            </div>
+
+
+            <div class="centrar"></br><select name="posicion" id="dropdown">
+                    <option selected value="0">Elije una opción</option>
+                    <option value="Arquero">Arquero</option>
+                    <option value="Delantero">Delantero</option>
+                    <option value="Defensor">Defensor</option>
+                    <option value="Mediocampista">Mediocampista</option>
+                </select></div>
+
+            <div>
+                <h2>¿Quién es tu idolo?</h2>
+            </div>
+
+            <div><label for="schiavi">
+                    <input id="schiavi" type="checkbox" name="idolo" value="Schiavi" class="botones">Schiavi</label><br>
+
+                <label for="battaglia">
+                    <input id="battaglia" type="checkbox" name="idolo" value="Battaglia"
+                        class="botones">Battaglia</label><br>
+
+                <label for="riquelme">
+                    <input id="riquelme" type="checkbox" name="idolo" value="Riquelme"
+                        class="botones">Riquelme</label><br>
+
+                <label for="palermo">
+                    <input id="palermo" type="checkbox" name="idolo" value="Palermo" class="botones">Palermo</label>
+            </div>
+
+            <div>
+                <h2>¿Algun comentario o sugerencia?</h2>
+            </div>
+
+            <textarea placeholder="Deja tu comentario aquí..."></textarea>
+
+            <br><br>
+            <div><button id="submit" type="submit">Enviar formulario</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
